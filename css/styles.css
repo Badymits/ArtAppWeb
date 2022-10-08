@@ -165,7 +165,7 @@ a {
     }
 
     .navbar__menu.active{
-        background: #111;
+        background: #353935;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -415,7 +415,7 @@ a {
 
 .box h2{
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -424,7 +424,7 @@ a {
 } 
 .box p{
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     position: absolute;
     top: 60%;
@@ -463,12 +463,21 @@ a {
 }
 
 .box-all{
-    width: 150px;
-    height: 50px;
-    margin: 20px;
-    color: black;
-    border: 2px solid black;
+    width: 120px;
+    border: solid black 2px;
+    border-radius: 15%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.box-all h1{
     text-align: center;
+    font-size: 3em;
+    margin: auto;
+}
+
+.box-all:hover{
+    background-color: #3498db;
 }
 
 
@@ -518,6 +527,7 @@ a {
     position: relative;
     background-color: #d7d7d8;
     overflow: hidden;
+    
 }
 
 .image-gallery-body .image-box:nth-child(7n+1){
@@ -531,6 +541,7 @@ a {
     object-fit: cover;
     transition: all 0.5s ease;
 }
+
 
 .image-gallery-body .image-box:hover img{
     transform: scale(1.1);
@@ -572,7 +583,9 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
+
 
 .image-gallery-body .image-box .details .category{
     font-size: 13px;
@@ -582,6 +595,7 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    
 }
 
 .image-gallery-body .image-box:hover .details .title{
@@ -597,10 +611,11 @@ a {
     visibility: visible;
     transition: all 0.3s 0.2s ease;
 }
-.image-gallery-body .image-box .details .title a,
-.image-gallery-body .image-box .details .category a{
+.image-gallery-body .image-box .details .title p,
+.image-gallery-body .image-box .details .category p{
     color: #222222;
     text-decoration: none;
+    font-weight: 400;
 }
 
 @media (max-width: 768px){

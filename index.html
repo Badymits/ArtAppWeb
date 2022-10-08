@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/lightbox.css">
     <script src="https://kit.fontawesome.com/0bd9075064.js" crossorigin="anonymous"></script>
+
     <title>Coming out</title>
 </head>
 <body>
@@ -54,7 +56,7 @@
     <!-- Background section -->
     <div class="background-body">
         <div class="background">
-            <h1>Background of the website</h1>
+            <h1>About the website</h1>
             <p>With the advent of the internet becoming somewhat of an integral part of our modern society, it came with the benefit 
                 of bridging the world together. As such, people became more and more accepting of what were once stigmatized. However, despite 
                 the modern society being more accepting now compared to the past, certain minority groups and communities are still faced with 
@@ -72,9 +74,11 @@
 
     <!-- Description section -->
     <section class="description">
-        <div class="titleText">
-            <h1>Description</h1>
-            <h1 style="color: black;" href="" class="list box-all active" data-filter="all">All</h1>
+        <div class="titleText" style="text-align: center;">
+            <h1>Gallery</h1>
+            <div class="box-all list active" data-filter="all">
+                <h1>All</h1>
+            </div> 
         </div>
         <div class="description-container">
             
@@ -110,85 +114,144 @@
 
     <!-- Gallery Section -->
     <section class="image-gallery">
-        <h1>Gallery</h1>
+        
         <div class="image-gallery-body">
             <div class="image-box gay">
-                <img src="img/BATINGAL, LI - 君の名前で僕を呼んで.png" alt="Batingal.png">
-                <div class="overlay">
-                    <div class="details">
-                        <h3 class="title">
-                            <a href="#">君の名前で僕を呼んで</a>
-                        </h3>
-                        <span class="category">
-                            <a href="">Li Batingal</a>
-                        </span>
+                <a id="image-a-tag" href="img/BATINGAL, LI - 君の名前で僕を呼んで.png" data-lightbox="models" data-title="君の名前で僕を呼んで">
+                    <img src="img/BATINGAL, LI - 君の名前で僕を呼んで.png">
+                    <div class="overlay">
+                        <div class="details">
+                            <h3 class="title">
+                                <p>君の名前で僕を呼んで</p>
+                            </h3>
+                            <span class="category">
+                                <p href="">Li Batingal</p>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
+                
             </div>
             <div class="image-box gay">
-                <img src="img/BATINGAL, LI - 君の名前で僕を呼んで.png" alt="Batingal.png">
-                <div class="overlay">
-                    <div class="details">
-                        <h3 class="title">
-                            <a href="#">君の名前で僕を呼んで</a>
-                        </h3>
-                        <span class="category">
-                            <a href="">Li Batingal</a>
-                        </span>
+                <a href="img/Agonoy, Ralp Kemuel - Underneath The Rain(bow) .jpg" data-lightbox="models" data-title="Underneath The Rain(bow)">
+                    <img src="img/Agonoy, Ralp Kemuel - Underneath The Rain(bow) .jpg" alt="Agonoy.png">
+                    <div class="overlay">
+                        <div class="details">
+                            <h3 class="title">
+                                <p>Underneath The Rain(bow)</p>
+                            </h3>
+                            <span class="category">
+                                <p href="">Ralp Kemuel Agonoy</p>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>                            
             </div>
             <div class="image-box">
-                <img src="img/JACOB, KYLE - ALPAS.png" alt="Jacob.png">
-                <div class="overlay">
-                    <div class="details">
-                        <h3 class="title">
-                            <a href="#">Alpas</a>
-                        </h3>
-                        <span class="category">
-                            <a href="">Kyle Jacob</a>
-                        </span>
+                <a href="/img/Aguirre, Samantha - Big Fan of Space.png" data-lightbox="models" data-title="Big Fan of Space">
+                    <img src="img/Aguirre, Samantha - Big Fan of Space.png" alt="Aguirre.png" >
+                    <div class="overlay">
+                        <div class="details">
+                            <h3 class="title">
+                                <p >Big Fan of Space</p>
+                            </h3>
+                            <span class="category">
+                                <p href="">Samantha Aguirre</p>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
+                
             </div>
             <div class="image-box gay">
-                <img src="img/JACOB, KYLE - ALPAS.png" alt="Jacob.png">
-                <div class="overlay">
-                    <div class="details">
-                        <h3 class="title">
-                            <a href="#">Alpas</a>
-                        </h3>
-                        <span class="category">
-                            <a href="">Kyle Jacob</a>
-                        </span>
+                <a href="img/JACOB, KYLE - ALPAS.png" data-lightbox="models" data-title="Alpas">
+                    <img id="gallery-img" src="img/JACOB, KYLE - ALPAS.png" alt="Jacob.png" >
+                    <div class="overlay">
+                        <div class="details">
+                            <h3 class="title">
+                                <p href="#">Alpas</p>
+                            </h3>
+                            <span class="category">
+                                <p href="">Kyle Jacob</p>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="image-box gay">
+                <a href="img/JAMORABON, CHELSEA JAYNE F. -THE BURNING.png" data-lightbox="models" data-title="The Burning">
+                    <img src="img/JAMORABON, CHELSEA JAYNE F. -THE BURNING.png" alt="Jamorabon.png" id="gallery-img">
+                    <div class="overlay">
+                        <div class="details">
+                            <h3 class="title">
+                                <p href="#">The Burning</p>
+                            </h3>
+                            <span class="category">
+                                <p href="">Chelsea Jamorabon</p>
+                            </span>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="image-box">
-                <img src="img/Gutierrez, Bianca V. - Teddy’s appreciation.GIF" alt="Gutierrez.png">
-                <div class="overlay">
-                    <div class="details">
-                        <h3 class="title">
-                            <a href="#">Teddy's Appreciation</a>
-                        </h3>
-                        <span class="category">
-                            <a href="">Bianca Gutierrez</a>
-                        </span>
+                <a href="/img/Bautista, Aleck - In The Closet.png" data-lightbox="models" data-title="In The Closet">
+                    <img src="/img/Bautista, Aleck - In The Closet.png" alt="Bautista.png">
+                    <div class="overlay">
+                        <div class="details">
+                            <h3 class="title">
+                                <p>In The Closet</p>
+                            </h3>
+                            <span class="category">
+                                <p>Aleck Bautista</p>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="image-box gay">
-                <img src="img/JAMORABON, CHELSEA JAYNE F. -THE BURNING.png" alt="Jamorabon.png">
-                <div class="overlay">
-                    <div class="details">
-                        <h3 class="title">
-                            <a href="#">The Burning</a>
-                        </h3>
-                        <span class="category">
-                            <a href="">Chelsea Jamorabon</a>
-                        </span>
+            <div class="image-box">
+                <a href="/img/Gutierrez, Bianca V. - Teddy’s appreciation.GIF" data-lightbox="models" data-title="Teddy's Appreciation">
+                    <img src="/img/Gutierrez, Bianca V. - Teddy’s appreciation.GIF" alt="Gutierrez.png">
+                    <div class="overlay">
+                        <div class="details">
+                            <h3 class="title">
+                                <p>Teddy's Appreciation</p>
+                            </h3>
+                            <span class="category">
+                                <p>Bianca Gutierrez</p>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="image-box">
+                <a href="/img/Baylon, Denisse - Metamorphosis.png" data-lightbox="models" data-title="Metamorphosis">
+                    <img src="/img/Baylon, Denisse - Metamorphosis.png" alt="Baylon.png">
+                    <div class="overlay">
+                        <div class="details">
+                            <h3 class="title">
+                                <p>Metamorphosis</p>
+                            </h3>
+                            <span class="category">
+                                <p>Denisse Baylon</p>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="image-box">
+                <a href="/img/Cloma, Jerik - Colors Under the Monotony.png" data-lightbox="models" data-title="Colors Under the Monotony">
+                    <img src="/img/Cloma, Jerik - Colors Under the Monotony.png" alt="Cloma.png">
+                    <div class="overlay">
+                        <div class="details">
+                            <h3 class="title">
+                                <p>Colors Under the Monotomy</p>
+                            </h3>
+                            <span class="category">
+                                <p>Jerik Cloma</p>
+                            </span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         
@@ -228,6 +291,7 @@
         <video controls width="500px" type="video/mp4" src="test.mp4"></video>
     </div>   -->
     <script src="js/app.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $(document).ready(function(){
