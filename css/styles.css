@@ -40,7 +40,7 @@ a {
 
 /* Header section */
 .navbar{
-    background: #FFFAFA;
+    background: #353935 ;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@ a {
 
 #navbar__logo {
     background-color: #131313;
-    background-image: linear-gradient(to left, #9fffe8 20%, #fff2c4 40%, #ffc9c8, 60%, #eb9feb 80%);
+    background-image: linear-gradient(to left, #9fffe8 20%, #fff2c4 40%,  #eb9feb 80%);
     background-size: 100%;
     text-transform: uppercase;
     -webkit-background-clip: text;
@@ -95,7 +95,7 @@ a {
 }
 
 .navbar__links{
-    color: #131313;
+    color: #fff;
 
     font-size: 18px;
     display: flex;
@@ -165,7 +165,7 @@ a {
     }
 
     .navbar__menu.active{
-        background: #FFFAFA;
+        background: #111;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -183,7 +183,7 @@ a {
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: black;
+        background: #FFFAFA;
     }
 
     .navbar__item{
@@ -380,6 +380,39 @@ a {
 /* End background section */
 
 /* Description Section */
+.box{
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.description .titleText{
+    text-align: center;
+}
+
+
+
+.lesbian:hover{
+    background-image: linear-gradient(to bottom, #D52D00 13%, #EF7627 27%, #FF9A56 59%, #FFFFFF 78%, #D162A4 86%, #B55690 94%, #A30262 100%);
+}
+
+.gay:hover{
+    background-image: linear-gradient(to bottom, #e74c3c 13%, #e67e22 27%, #f1c40f 59%, #2ecc71 78%, #3498db 86%, #9b59b6 100%);
+}
+
+.bisexual:hover{
+    background-image: linear-gradient(to bottom, #D00070 52%, #8C4799 66%, #0032A0 100%);
+}
+
+.transgender:hover{
+    background-image: linear-gradient(to bottom, #74d7ec 15%, #ffafc7 45%, #fbf9f5 65%, #ffb5cb 80%, #73d5ea 100%);
+}
+
+.queer:hover{
+    background-image: linear-gradient(to bottom, #B57EDC 32%, #FFFFFF 66%, #4A8123 100%);
+}
+
+
+
 .box h2{
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -400,18 +433,18 @@ a {
 } 
 
 .description{
-    margin-top: 10em;
+    margin-top: 5.5em;
 }
 
 .description h1 {
     text-align: center;
     font-size: 3.5em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .description-container{
     width: 100%;
-    min-height: 60vh;
+    min-height: 40vh;
     background: white;
     /* flexbox style */
     display: flex;
@@ -419,7 +452,6 @@ a {
     justify-content: space-around;
     flex-flow: wrap;
 }
-
 
 .box{
     width: 150px;
@@ -429,6 +461,16 @@ a {
     border: 2px solid black;
     position: relative;
 }
+
+.box-all{
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 1200px){
     .box{
@@ -449,8 +491,9 @@ a {
     padding: 0;
     box-sizing: border-box;
     position: relative;
-    background-color: #fafafa;
+    background-color: white;
     font-family: "source sans pro", sans-serif;
+    padding-top: 50px;
 }
 
 .image-gallery h1{
