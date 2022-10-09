@@ -495,7 +495,46 @@ a {
 /* End description section */
 
 /* Image Gallery Section */
-.image-gallery{
+.gallery {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+.gallery-body {
+	background: #fff;
+	font-family: Trebuchet Ms;
+}
+
+.container {
+	width: 80%;
+	column-count: 4;
+	margin: 0 auto;
+}
+
+.grid-item img {
+	width: 100%;
+	height: auto;
+	margin: 1em;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.container {
+		column-count: 3;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.container {
+		column-count: 2;
+	}
+}
+
+/* .image-gallery{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -616,6 +655,11 @@ a {
     color: #222222;
     text-decoration: none;
     font-weight: 400;
+    font-size: 18px;
+}
+.image-gallery-body .image-box .details a{
+    text-decoration: none;
+    color: #222222;
 }
 
 @media (max-width: 768px){
@@ -627,7 +671,7 @@ a {
         grid-column: unset;
         grid-row: unset;
     }
-}
+} */
 
 /* End Image Gallery Section */
 
@@ -716,6 +760,21 @@ footer{
 /* End Footer Section */
 
 
-
+.fancybox-button--fb {
+    padding: 14px;
+  }
+  
+  .fancybox-button--tw {
+    padding: 13px;
+  }
+  
+  .fancybox-button--close {
+    padding: 9px;
+  }
+  
+  .fancybox-button--fb svg path,
+  .fancybox-button--tw svg path {
+    stroke-width: 0;
+  }
 
 
