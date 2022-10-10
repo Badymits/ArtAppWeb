@@ -15,7 +15,7 @@ a {
 
 /* Header section */
 .navbar{
-    background: #353935 ;
+    background: #fff ;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -79,6 +79,21 @@ a {
     text-decoration: none;
     padding: 0 4rem;
     height: 100%;
+}
+
+#navbar__home{
+    color: #eb9feb;
+}
+
+#navbar__gallery{
+    color: #2dd7e2;
+}
+#navbar__advocacy{
+    color: #ffc9c8;
+}
+
+#navbar__podcast{
+    color: #9fffe8;
 }
 
 .navbar__btn{
@@ -146,11 +161,11 @@ a {
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #FFFAFA;
+        background: #131313;
     }
 
     .navbar__menu.active{
-        background: #353935;
+        background: #fff;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -168,7 +183,7 @@ a {
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #FFFAFA;
+        background: #131313;
     }
 
     .navbar__item{
@@ -235,7 +250,7 @@ a {
 {
     width: 100%;
     height: 100vh;
-    background-color: #ddd;
+    background-color: #ffdec6;
     display: flex;
     justify-content: center;
     align-items: center;
