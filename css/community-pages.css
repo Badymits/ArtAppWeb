@@ -15,7 +15,7 @@ a {
 
 /* Header section */
 .navbar{
-    background: #353935 ;
+    background: #fff ;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -79,6 +79,21 @@ a {
     text-decoration: none;
     padding: 0 4rem;
     height: 100%;
+}
+
+#navbar__home{
+    color: #eb9feb;
+}
+
+#navbar__gallery{
+    color: #2dd7e2;
+}
+#navbar__advocacy{
+    color: #ffc9c8;
+}
+
+#navbar__podcast{
+    color: #9fffe8;
 }
 
 .navbar__btn{
@@ -230,80 +245,255 @@ a {
 }
 /* End header section */
 
-/* About Section */
-.about
-{
+/* About us section */
+/* Text Section */
+.section{
+	width: 100%;
+	min-height: 120vh;
+	background-color: #ffdec6;
+}
+.container{
+	width: 90%;
+	display: block;
+	margin:auto;
+	padding-top: 40px;
+}
+.content-section{
+    margin-top: 12em;
+	float: left;
+	width: 40%;
+}
+.gallery{
+	float: right;
+	width: 60%;
+}
+.gallery img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 19px;
+}
+
+.content-section .title h1{
+    float: left;
+}
+
+.content-section .title img{
+    float: right;
+    padding-left: 5px;
+}
+
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 50px;
+	font-family: sans-serif;
+	font-size: 18px;
+    text-align: justify;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.gallery{
+	float:none;
+	width:100%;
+	
+}
+.gallery img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}
+/* End Text Secition */
+
+/* Gallery section */
+.gallery .image-gallery{
     width: 100%;
-    height: 100vh;
-    background-color: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about .content img{
-    height: auto;
-    width: 600px;
-    max-width: 100%;
-}
-
-.text{
-    width: 550px;
-    max-width: 100%;
-    padding: 0 10px;
-}
-
-.content{
-    width: 1280px;
-    max-width: 95%;
+    max-width: 950px;
     margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+
+.image-gallery .image-box{
+    position: relative;
+    background-color: #d7d7d8;
+    overflow: hidden;
+}
+
+.image-gallery .image-box:nth-child(7n + 1){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.image-gallery .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+} 
+
+.image-gallery .image-box:hover img{
+    transform: scale(1.1);
+} 
+
+.image-gallery .image-box .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fafafaf2;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
 }
 
-.text h1{
-    font-size: 48px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+.image-gallery .image-box:hover .overlay{
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    opacity: 1;
 }
 
-.text h2{
+.image-gallery .image-box .details .title{
+    margin-bottom: 8px;
     font-size: 24px;
-    font-family: sans-serif;
-    color:#5d5d5d;
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
-.text p{
-    font-size: 20px;
-    font-family: serif;
-    margin-top: 10px;
-    line-height: 1.5;
+.image-gallery .image-box .details .category{
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    bottom: -5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1180px){
-    .about{
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
+
+.image-gallery .image-box:hover .details .title{
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s 0.2s ease;
+}
+
+.image-gallery .image-box:hover .details .category{
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s 0.2s ease;
+    text-align: center;
+}
+.image-gallery .image-box .details .title p,
+.image-gallery .image-box .details .category p{
+    color: #222222;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+} 
+
+/* Gallery media query */
+@media screen and (min-width: 1400px){
+    .gallery .image-gallery{
+        
+        grid-template-columns: repeat(auto-fit, minmax(270px, 2fr));
+        grid-auto-rows: 250px;   
     }
 }
 
-@media screen and (max-width: 650px){
-    .about .content img{
-        margin-bottom: 35px;
+
+
+@media screen and (max-width: 768px){
+    .gallery .image-gallery{
+        
+        grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
+        grid-auto-rows: 250px;   
     }
-    .text h1{
-        font-size: 28px;
-        margin-bottom: 25px ;
+
+    .image-gallery .image-box:nth-child(7n + 1){
+        grid-column: unset;
+        grid-row: unset;
     }
 }
-/* About Section */
+/* End Gallery media query */
 
-/* Image Gallery Section */
-
-/* End Image Gallery Section */
+/* End Gallery section */
+/* End About section */
 
 /* Footer Section */
 .footer-body{
@@ -317,7 +507,7 @@ footer{
     background: #111;
     height: auto;
     width: 100%;
-    font-family: "Open Sans";
+    font-family: 'Montserrat', sans-serif;
     padding-top: 40px;
     color: #fff;
 }
@@ -388,3 +578,4 @@ footer{
 }
 
 /* End Footer Section */
+
