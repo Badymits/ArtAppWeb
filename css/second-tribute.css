@@ -271,6 +271,23 @@ html{
     
 }
 
+.about .content .box{
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+    color: black;
+    border: 2px solid black;
+    position: relative;
+}
+
+.content .box-all{
+    width: 120px;
+    border: solid black 2px;
+    border-radius: 15%;
+    margin: auto;
+    cursor: pointer;
+}
+
 /* Footer Section */
 .footer-body{
     background: #fcfcfc;

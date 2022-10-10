@@ -42,17 +42,17 @@
         </div>
     </nav>
     <!-- End header section -->
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-image">
-            <div class="hero-container">
+    <div class="home" id="hero">
+        <div class="hero hero-container">
+            <div>
                 <h1><span>Coming out</span></h1>
-                <span class="des">Art Appreciation Exhibit</span>
-                
+                <span class="des">The retelling of the LGBTQ+ community's stories, 
+                    <br>
+                    experiences, and journey through art</span>
             </div>
         </div>
-    </section>
+    </div>
+
     <!-- End Hero Section -->
 
     <!-- Background section -->
@@ -94,7 +94,7 @@
             </div>
             <div class="box list gay" data-filter="gay">
                 <h2>G</h2>
-                <p>Gay</p>
+                <a href="/pages/gay-gallery.html"><p>Gay</p></a> 
             </div>
             <div class="box list bisexual" data-filter="bisexual">
                 <h2>B</h2>
@@ -106,7 +106,7 @@
             </div>
             <div class="box list queer" data-filter="queer-questioning">
                 <h2>Q</h2>
-                <p>Queer</p>
+                <p style="font-size: 11px;">Queer/Questioning</p>
             </div>
             <div class="box list" data-filter="plus-others">
                 <h2>+</h2>
@@ -123,9 +123,7 @@
     <section class="gallery">
         <div class="gallery-body">
             <div class="container">
-                <div class="img-box gay">
-                    this is a test text div 
-                </div>
+                
                 <div class="img-box gay">
                     <div class="grid-item">
                         <div class="fancybox-media" data-fancybox="gallery" data-caption= '君の名前で僕を呼んで - Li Batingal <br> <a href="/pages/Garcia-Araw-araw.html">Go to artwork</a>' href="img/BATINGAL, LI - 君の名前で僕を呼んで.png">    
@@ -339,16 +337,18 @@
                 const value =$(this).attr('data-filter');
                 if(value == 'all'){
                     $('.img-box').show('1000')
+                    $('.def').hide('1000')
                 }
                 else {
                     $('.img-box').not('.'+value).hide('1000');
                     $('.img-box').filter('.'+value).show('1000');
+                    $('.def').not('.text-'+value).hide('1000');
+                    $('.def').filter('.text-'+value).show('1000');
                 }
             })
             $('.list').click(function(){
                 $(this).addClass('active').siblings().removeClass('active')
             })
-
         })
     </script>   
     
