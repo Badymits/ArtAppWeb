@@ -267,7 +267,7 @@ a {
 }
 .gallery{
 	float: right;
-	width: 60%;
+	width: 55%;
 }
 .gallery img{
 	width: 100%;
@@ -285,6 +285,7 @@ a {
 .content-section .title img{
     float: right;
     padding-left: 5px;
+    padding-right: 10px;
 }
 
 .content-section .content h3{
@@ -293,7 +294,7 @@ a {
 	font-size: 21px;
 }
 .content-section .content p{
-	margin-top: 50px;
+	margin-top: 30px;
 	font-family: sans-serif;
 	font-size: 18px;
     text-align: justify;

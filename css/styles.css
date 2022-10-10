@@ -375,7 +375,7 @@ a {
 }
 
 
-.description-container .lesbian:hover{
+/* .description-container .lesbian:hover{
     background-image: linear-gradient(to bottom, #D52D00 13%, #EF7627 27%, #FF9A56 59%, #FFFFFF 78%, #D162A4 86%, #B55690 94%, #A30262 100%);
 }
 
@@ -385,11 +385,11 @@ a {
 
 .description-container .bisexual:hover{
     background-image: linear-gradient(to bottom, #D00070 52%, #8C4799 66%, #0032A0 100%);
-}
+} */
 
-.description-container .transgender:hover{
+/* .description-container .transgender:hover{
     background-image: linear-gradient(to bottom, #74d7ec 15%, #ffafc7 45%, #fbf9f5 65%, #ffb5cb 80%, #73d5ea 100%);
-}
+} */
 
 
 
@@ -445,6 +445,13 @@ a {
     border: 2px solid black;
     position: relative;
 }
+.description .box h2{
+    font-size: 8em;
+}
+
+.description-container .box p{
+    padding-top: 7em;
+}
 
 .box-all{
     width: 120px;
@@ -460,9 +467,6 @@ a {
     margin: auto;
 }
 
-.box-all:hover{
-    background-color: #3498db;
-}
 
 
 @media screen and (max-width: 1200px){
