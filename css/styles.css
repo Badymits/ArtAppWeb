@@ -375,25 +375,6 @@ a {
 }
 
 
-/* .description-container .lesbian:hover{
-    background-image: linear-gradient(to bottom, #D52D00 13%, #EF7627 27%, #FF9A56 59%, #FFFFFF 78%, #D162A4 86%, #B55690 94%, #A30262 100%);
-}
-
-.description-container .gay:hover{
-    background-image: linear-gradient(to bottom, #e74c3c 13%, #e67e22 27%, #f1c40f 59%, #2ecc71 78%, #3498db 86%, #9b59b6 100%);
-}
-
-.description-container .bisexual:hover{
-    background-image: linear-gradient(to bottom, #D00070 52%, #8C4799 66%, #0032A0 100%);
-} */
-
-/* .description-container .transgender:hover{
-    background-image: linear-gradient(to bottom, #74d7ec 15%, #ffafc7 45%, #fbf9f5 65%, #ffb5cb 80%, #73d5ea 100%);
-} */
-
-
-
-
 .box h2{
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -438,13 +419,27 @@ a {
 }
 
 .box{
-    width: 150px;
+    width: 170px;
     height: 200px;
     margin: 20px;
     color: black;
     border: 2px solid black;
     position: relative;
 }
+
+.description-container  .lesbian:hover{
+    background-image: linear-gradient(to bottom, #D52D00 13%, #EF7627 27%, #FF9A56 59%, #FFFFFF 78%, #D162A4 86%, #B55690 94%, #A30262 100%);
+}
+.description-container  .gay:hover{
+    background-image: linear-gradient(to bottom, #e74c3c 13%, #e67e22 27%, #f1c40f 59%, #2ecc71 78%, #3498db 86%, #9b59b6 100%);
+}
+.description-container  .bisexual:hover{
+    background-image: linear-gradient(to bottom, #D00070 52%, #8C4799 66%, #0032A0 100%);
+}
+.description-container  .transgender:hover{
+    background-image: linear-gradient(to bottom, #74d7ec 15%, #ffafc7 45%, #fbf9f5 65%, #ffb5cb 80%, #73d5ea 100%);
+}
+
 .description .box h2{
     font-size: 8em;
 }
@@ -465,6 +460,11 @@ a {
     text-align: center;
     font-size: 3em;
     margin: auto;
+}
+
+.box a{
+    color: #131313;
+    text-decoration: none;
 }
 
 
