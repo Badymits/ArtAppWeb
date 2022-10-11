@@ -363,8 +363,15 @@ a {
 .content-section .social{
 	text-align: center;
 }
-
 }
+
+@media screen and (min-width: 1800px){
+    .section{
+        min-height: 90vh;
+    }
+}
+
+
 /* End Text Secition */
 
 /* Gallery section */
