@@ -251,7 +251,7 @@ a {
 /* Text Section */
 .section{
 	width: 100%;
-	min-height: 120vh;
+	min-height: 110vh;
 	background-color: #ffdec6;
 }
 .container{
